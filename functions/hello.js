@@ -3,7 +3,7 @@ let votesArray = [0, 0, 0, 0];
 
 exports.handler = async event => {
   const v = event.queryStringParameters.vote
-  if (vote.value === "a") {
+  if (v.value === "a") {
     votesArray[0] += 1;
   } else if (v === "b") {
     votesArray[1] += 1;
